@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url('./fundo.jpg');
+}
+
+.visible {
+    display: flex !important;
+}
+
+.botao-pedido {
+    background-color: #ccff00; 
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    font-weight: 900; 
+    text-align: center;
+    padding: 12px 28px;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0 #000000; 
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    z-index: 1;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.botao-pedido:hover {
+    transform: translate(3px, 3px); 
+    box-shadow: 0 0 0 #000000;
+}
+
+.fundo-escuro {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+}
+
+.flutuante {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px; /* Este raio já está ótimo para um modal */
+    width: 300px;
+    max-width: 300px;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0 #000000;
+}
+
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.topo i {
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.topo i:hover {
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+}
+
+.circulo i { 
+    color: #000000;
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.subtitulo {
+    opacity: 0.9;
+    font-size: 14px;
+    margin-top: 3px;
+    text-align: center;
+
+}
+
+.barras {
+    height: 7px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    margin-top: 20px;
+}
+
+.barra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 0.2px solid #000000;
+}
+
+.previsao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 0.2px solid #000000;
+}
+
+.texto-previsao {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.horario-previsao {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.b1 {
+    background-color: #ccff00;
+}
