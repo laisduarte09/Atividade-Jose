@@ -70,5 +70,5 @@ const finalizarPedido = () => {
 }
 
 const pintarBarra = (barra) => {
-    document.querySelector(`.b${barra}`).style.backgroundColor = "#ccff00"
+    document.querySelector(`.b${barra}`).style.backgroundColor = "#707da8"
 }
