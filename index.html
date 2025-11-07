@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades JavaScript</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Pedido Ifood</title>
 </head>
-<body> 
-    <button class="botao-pedido" onclick="abrirFlutuante()">Fazer Pedido</button>
+<body>
+    <div class="container-principal">
+        <h1>Exercícios de JavaScript</h1>
+        <p>Escolha uma das questões abaixo:</p>
 
-    <div class="fundo-escuro">
-        <div class="flutuante">
-            <div class="topo">
-                <i class="fa-solid fa-xmark" onclick="fecharFlutuante()"></i>
-            </div>
-            <div class="circulo">
-                <i class="fa-solid fa-burger icone"></i>
-            </div>
-
-            <h1 class="titulo">Pedido Confirmado!</h1>
-            <span class="subtitulo">Aguardando o restaurante aceitar...</span>
-
-            <div class="barras">
-                <div class="barra b1"></div>
-                <div class="barra b2"></div>
-                <div class="barra b3"></div>
-                <div class="barra b4"></div>
-                <div class="barra b5"></div>
-            </div>
-
-            <div class="previsao">
-                <span class="texto-previsao">Previsão de entrega:</span>
-                <span class="horario-previsao">20:00 - 20:10</span>
-            </div>
+        <div class="container-botoes">
+            <button onclick="location.href='questao1.html'">Questão 1</button>
+            <button onclick="location.href='questao2.html'">Questão 2</button>
+            <button onclick="location.href='questao3.html'">Questão 3</button>
+            <button onclick="location.href='questao4.html'">Questão 4</button>
+            <button onclick="location.href='questao5.html'">Questão 5</button>
         </div>
     </div>
-
-    <script src="main.js"></script>
 </body>
 </html>
