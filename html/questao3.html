@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Questão 3 - Pedido Ifood</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <div class="container-principal">
+    <h2>Pedido Ifood! Faça o seu:</h2>
+
+    <button class="botao-pedido" onclick="abrirFlutuante()">Fazer Pedido</button>
+
+    <div class="fundo-escuro" id="modal">
+      <div class="flutuante" role="dialog" aria-modal="true">
+        <div class="topo">
+          <i class="fa-solid fa-xmark" onclick="fecharFlutuante()" aria-label="Fechar"></i>
+        </div>
+
+        <div class="circulo">
+          <i class="fa-solid fa-burger icone"></i>
+        </div>
+
+        <h1 class="titulo">Pedido Confirmado!</h1>
+        <span class="subtitulo">Aguardando o restaurante aceitar...</span>
+
+        <div class="barras" aria-hidden="true">
+          <div class="barra b1"></div>
+          <div class="barra b2"></div>
+          <div class="barra b3"></div>
+          <div class="barra b4"></div>
+          <div class="barra b5"></div>
+        </div>
+
+        <div class="previsao">
+          <span class="texto-previsao">Previsão de entrega:</span>
+          <span class="horario-previsao">20:00 - 20:10</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html"><button class="btn-voltar">Voltar para o início</button></a>
+  </div>
+
+  <script src="../js/questao3.js" defer></script>
+</body>
+
+</html>
